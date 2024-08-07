@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/663d3f47c5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typeit@8.8.4/dist/index.umd.js"></script>
+
+    <title>Jasmine Portfolio</title>
+    <meta
+      name="description"
+      content="This webpage is Jasmine's web portfolio. I
+    want to be a growing developer."
+    />
+
+    <meta name="author" content="Jasmine" />
+
+    <meta name="keywords" content="web, frontend, backend, softwareEngineer" />
+
+    <!-- OG Tag -->
+    <meta property="og:title" content="Jasmine Portfolio" />
+    <meta
+      property="og:description"
+      content="This webpage is Jasmine's web portfolio. I
+    want to be a growing developer."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <!-- Image logo -->
+        <div class="nav__logo">
+          <img class="nav__img" src="./images/logo.png" alt="Jasmine Logo" />
+          <a href="#" class="nav__brand">Jasmine</a>
+        </div>
+        <!-- Menu -->
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home -->
+      <section class="home container section" id="home">
+        <!-- Home Data -->
+        <div class="home__data">
+          <h2 id="typeit" class="home__title"></h2>
+
+          <a href="#contact" class="button">Contact</a>
+
+          <div class="home__social">
+            <a
+              href="https://github.com/jasmineHur"
+              target="_blank"
+              title="Jasmine Github Link"
+            >
+              <i class="fa-brands fa-github home__social-icon"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Home Image -->
+        <img
+          class="home__img"
+          src="./images/home/profile.jpg"
+          alt="Jasmine profile image"
+        />
+      </section>
+
+      <!-- About -->
+      <section class="about section bg-grey-1" id="about">
+        <h2 class="section__title">About</h2>
+        <div class="about__container container">
+          <img
+            class="about__img"
+            src="./images/about/about.jpg"
+            alt="Jasmine about image"
+          />
+
+          <div class="about__data">
+            <h3 class="about__subtitle">I am ...</h3>
+            <p class="about__text">
+              As someone with no initial experience as a developer, I was
+              fortunate to join a company that creates web pages, where I began
+              my development career. Wanting to deepen my programming knowledge,
+              I graduated with a Bachelor's degree in Computer Science from
+              Queensland University of Technology. <br /><br />
+              While working, I gained experience in JavaScript, Vue, and SQL. I
+              continued my education by studying Java, C#, C++, and other
+              languages and frameworks, and worked on various projects during my
+              university years. <br /><br />
+              I am always eager to learn and dedicated to my work. In five
+              years, I hope to become a full-stack developer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills__container container">
+          <!-- Skills data -->
+          <div>
+            <h3 class="skills__subtitle">Profesional Skills</h3>
+            <p class="skills__text">
+              I am well-versed in a variety of programming languages, including
+              JavaScript, SQL, and C#. My technical stack includes expertise in
+              React JS, Vue.js, Node JS, RESTful APIs, HTML5/CSS, MYSQL, AWS
+              Cloud Services, UML, and project management methodologies such as
+              Agile.
+            </p>
+            <div>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-html5 skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills_name">HTML5</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+
+                <progress
+                  class="skills__progress"
+                  id="html5"
+                  max="100"
+                  value="85"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-css3-alt skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills_name">CSS3</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span class="skills__percentage">80%</span>
+                </div>
+
+                <progress
+                  class="skills__progress"
+                  id="css3"
+                  max="100"
+                  value="80"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-js skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills_name">JavaScript</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+
+                <progress
+                  class="skills__progress"
+                  id="javascript"
+                  max="100"
+                  value="85"
+                ></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-solid fa-server skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills_name">Back-end (growing)</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span class="skills__percentage">50%</span>
+                </div>
+
+                <progress
+                  class="skills__progress"
+                  id="backend"
+                  max="100"
+                  value="50"
+                ></progress>
+              </article>
+            </div>
+          </div>
+
+          <!-- Image section -->
+          <div>
+            <img
+              class="skills__img"
+              src="./images/skills/desktop.jpg"
+              alt="Desktop image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="work section" id="work">
+        <h2 class="section__title">Work</h2>
+        <div class="work__container container">
+          <a
+            class="work__link"
+            href="https://metroimall.com/"
+            target="_blank"
+            title="Shopify Project"
+          >
+            <img
+              class="work__img"
+              src="./images/work/project1.jpg"
+              alt="Shopify Project"
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://github.com/jasmineHur/Web-Computing-Happiness"
+            target="_blank"
+            title="React project"
+          >
+            <img
+              class="work__img"
+              src="./images/work/project2.jpg"
+              alt="React project"
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://github.com/jasmineHur/Microprocessors-And-Digital-Systems-C"
+            target="_blank"
+            title="C programming project"
+          >
+            <img
+              class="work__img"
+              src="./images/work/project3.jpg"
+              alt="C programming project"
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://github.com/jasmineHur/Cloud-Computing-A1"
+            target="_blank"
+            title="Cloud Computing project"
+          >
+            <img
+              class="work__img"
+              src="./images/work/project4.jpg"
+              alt="Cloud Computing project"
+            />
+          </a>
+
+          <!-- <a
+            class="work__link"
+            href="https://github.com/jasmineHur/Web-Computing-Happiness"
+            target="_blank"
+            title="React project"
+          >
+            <img
+              class="work__img"
+              src="./images/work/project.jpg"
+              alt="React project"
+            />
+          </a>
+
+          <a
+            class="work__link"
+            href="https://github.com/jasmineHur/Web-Computing-Happiness"
+            target="_blank"
+            title="React project"
+          >
+            <img
+              class="work__img"
+              src="./images/work/project.jpg"
+              alt="React project"
+            />
+          </a> -->
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact</h2>
+
+        <div class="contact__container container">
+          <form id="contactForm" class="conatact__form">
+            <input
+              class="contact__input"
+              type="text"
+              name="name"
+              placeholder="name"
+              required
+            />
+            <input
+              class="contact__input"
+              type="text"
+              name="subject"
+              placeholder="subject"
+              required
+            />
+            <textarea
+              class="contact__input"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="message"
+              required
+            ></textarea>
+            <button class="contact__button button">Send</button>
+          </form>
+        </div>
+      </section>
+      <button class="floating-button" id="floatingButton">
+        <i class="fa-solid fa-arrow-up floating-button-icon"></i>
+      </button>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__title">Jasmine</p>
+      <div class="footer__social">
+        <a
+          href="https://github.com/jasmineHur"
+          target="_blank"
+          title="Jasmine Github Link footer__icon"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p class="footer__copy">
+        Copyright &copy; 2024 Jasmine ALL rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
