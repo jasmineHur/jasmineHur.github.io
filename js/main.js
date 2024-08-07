@@ -83,3 +83,25 @@ typeit
   .delete(8, { delay: 300 })
   .type('<strong class="home__title-color">Jasmine Hur</strong>')
   .go();
+
+// Email Client Open
+const $contactForm = document.getElementById("contactForm");
+
+$contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // With form information
+  const name = $contactForm.name.value;
+  const subject = $contactForm.subject.value;
+  const message = $contactForm.message.value;
+  const to = "h.eunyoung3@gmail.com";
+
+  // Open email client
+  location.href =
+    "mailto:" +
+    encodeURIComponent(to) +
+    "?subject=" +
+    encodeURIComponent(`[${name}'s enquiry] ${subject}`) +
+    "&body=" +
+    encodeURIComponent(message);
+});
